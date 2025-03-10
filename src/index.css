@@ -1,0 +1,102 @@
+body {
+    background-color: #A3B18A; /* Pastel Forest Green */
+    color: #2F3E46; /* Dark Green Text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #A3B18A; /* Darker Pastel Brown */
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white; /* White text for contrast */
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: normal;
+    color: white; /* Light beige for contrast */
+    margin-top: -10px; /* Moves it closer to the title */
+}
+
+
+.intro {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+/* Content Layout */
+.content-container {
+    display: flex;
+    justify-content: flex-start; /* Skeleton on the left */
+    align-items: center;
+    gap: 40px;
+}
+
+/* Skeleton Image */
+.skeleton {
+    position: relative;
+}
+
+.skeleton-img {
+    max-width: 60%;
+    height: auto;
+    display: block;
+}
+
+/* Clickable Regions */
+.clickable-region {
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.clickable-region:hover{
+    background: rgba(255, 0, 0, 0.3); /* Semi-transparent red on hover */
+
+}
+
+/* Position Clickable Areas */
+.skull { width: 95px; height: 95px; top: 0%; left: 20.5%; }
+.ribcage { width: 120px; height: 130px; top: 20%; left: 18%; }
+.lefthand{width: 50px; height: 50px; top: 52%; left: 1%;}
+.righthand{width: 50px; height: 50px; top: 52%; left: 49%;}
+.leftarm{width: 15px; height: 180px; top: 22%; left: 10%;transform: rotate(8deg);}
+.rightarm{width: 15px; height: 180px; top: 22%; left: 47%;transform: rotate(170deg);}
+.shoulders{width: 190px; height: 17px; top: 17%; left: 11%;}
+.pelvis{width: 120px; height: 50px; top: 40%; left: 18%;}
+.feet{width: 80px; height: 40px; top: 94%; left: 22%;}
+.legs{width: 110px; height: 280px; top: 50%; left: 19%;}
+
+
+/* Info Box (Right Side) */
+.info-box {
+    position: fixed; /* Ensures it stays in place when scrolling */
+    top: 50%; /* Moves it down halfway */
+    left: 50%; /* Moves it right halfway */
+    transform: translate(-50%, -50%); /* Centers it properly */
+    
+    width: 50vw; /* Adjusts the width to 50% of the viewport width */
+    max-width: 600px; /* Ensures it doesn't get too large on wide screens */
+    padding: 20px;
+    
+    background: rgba(255, 255, 255, 0.95); /* Slight transparency for a sleek look */
+    border-radius: 10px; /* Rounded corners for aesthetics */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for pop-out effect */
+    
+    text-align: center;
+    z-index: 1000; /* Ensures it’s above other elements */
+}
+
+
+button {
+    margin-top: 10px;
+}

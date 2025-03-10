@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Skeleton</title>
+    <link rel="stylesheet" href="src/index.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Skeleton</h1>
+        <h2 class="subtitle">Significant Evolutionary Changes In Hominins</h2>
+    </header>
+    
+
+    <main>
+        <div class="content-container">
+            <!-- Skeleton Image Section -->
+            <div class="skeleton">
+                <img src="/assets/transparentSkeleton.png" class="skeleton-img" alt="Skeleton">
+                
+            <!-- Clickable Regions -->
+            <!-- Skull -->
+            <div class="clickable-region skull" 
+            onclick="showInfo('Skull Region', 
+            `In humans, the foramen magnum is located on the bottom of the skull, closer to the teeth. 
+            In contrast, apes have a foramen magnum towards the back of their skull. 
+            The human head sits directly on top of the body trunk, while an ape’s head is positioned forward. 
+
+            Another difference is in teeth. Apes have large canines, creating a diastema (gap) between incisors and canines, 
+            whereas humans have smaller canines and no diastema. Apes also tend to have a U-Shaped dental arcade which helps with chewing and grinding tougher foods.
+            A human dental arcade is much more parabolic suggesting that the human diet has become less tough. 
+
+            Additionally, humans tend to have larger brains, leading to a more rounded skull shape. 
+            Apes, on the other hand, have more developed temporal muscles for strong biting.
+            <strong>Learn more about skull evolution <a href='https://www.pathwayz.org/Tree/Plain/APE+VS.+HOMININ+SKULLS'>here</a></strong>
+            `)">
+            </div>
+
+            <!-- Rib Cage & Spine -->
+            <div class="clickable-region ribcage" 
+            onclick="showInfo('Spine & Ribcage Region', 
+            `The human spine is S-shaped, created by the thoracic and lumbar vertebrae curvatures. 
+            This shape aids in balance, which is essential for bipedalism. 
+
+            In contrast, an ape’s spine is C-shaped, which supports quadrupedalism. 
+            Humans also have a barrel-shaped ribcage, while apes have a broader, funnel-shaped ribcage.
+            <strong>Learn more about ribcage evolution <a href='https://carta.anthropogeny.org/moca/topics/rib-cage-flaring'>here</a></strong>
+
+            `)">
+            </div>
+
+            <!-- Left Hand -->
+            <div class="clickable-region lefthand" 
+            onclick="showInfo('Hands', 
+            `The human and ape hands share many similarities, including opposable thumbs. 
+            This feature allows both species to grasp and manipulate objects. 
+
+            In humans, the opposable thumb is essential for tool use, while in apes, 
+            it aids in grasping tree branches. Both humans and apes also have fingerprints.
+            <strong>Learn more about hand evolution <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC1571064/'>here</a></strong>
+
+            `)">
+            </div>
+
+            <!-- Right Hand -->
+            <div class="clickable-region righthand" 
+            onclick="showInfo('Hands', 
+            `The human and ape hands share many similarities, including opposable thumbs. 
+            This feature allows both species to grasp and manipulate objects. 
+
+            In humans, the opposable thumb is essential for tool use, while in apes, 
+            it aids in grasping tree branches. Both humans and apes also have fingerprints.
+            <strong>Learn more about hand evolution <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC1571064/'>here</a></strong>
+
+            `)">
+            </div>
+
+            <!-- Shoulders -->
+            <div class="clickable-region shoulders" 
+            onclick="showInfo('Shoulders', 
+            `The shape of the human shoulder differs from that of an ape due to reduced climbing and increased tool use. 
+
+            In apes, the shoulder joint points the arms toward the skull, 
+            providing an advantage for climbing and swinging. 
+
+            In humans, the shoulder joint points the arms downward, better suited for manipulation and throwing.
+            <strong>Learn more about hand evolution <a href='https://www.ucsf.edu/news/2015/09/131526/shouldering-burden-evolution'>here</a></strong>
+
+            `)">
+            </div>
+
+            <!-- Pelvis -->
+            <div class="clickable-region pelvis" 
+            onclick="showInfo('Pelvis', 
+            `The human pelvis has evolved to support the weight of the upper body. 
+            It is short, broad, and bowl-shaped, allowing for better balance and bipedalism. 
+
+            In contrast, the ape pelvis is longer and more flared, as it does not need to support 
+            the body weight in the same way.
+            <strong>Learn more about hand evolution <a href='https://news.harvard.edu/gazette/story/2022/09/genetic-study-shows-evolution-of-human-pelvis/#:~:text=Compared%20with%20chimpanzees%20and%20gorillas,size%20of%20the%20birth%20canal.'>here</a></strong>
+
+            `)">
+            </div>
+
+            <!-- Feet -->
+            <div class="clickable-region feet" 
+            onclick="showInfo('Feet', 
+            `Unlike apes, humans do not have an opposable big toe. 
+            The human foot is designed for walking and running, while an ape’s foot is adapted for grasping.
+
+            The human foot has a pronounced arch, which aids in shock absorption. 
+            In contrast, the ape’s foot is flatter, with a widely spaced big toe for better grip in trees.
+            <strong>Learn more about hand evolution <a href='https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2021.760486/full'>here</a></strong>
+
+            `)">
+            </div>
+
+            <!-- Arms -->
+            <div class="clickable-region rightarm" 
+            onclick="showInfo('Arms', 
+            `The human arm is much shorter than the human leg. 
+            In contrast, the ape's arms are longer than their legs, which helps them navigate arboreal environments.
+            The longer arms also help prop the ape upward so that their head looks forward rather than towards the ground. 
+            <strong>Learn more about hand evolution <a href='https://explorersweb.com/apes-downclimbing-crucial-for-human-arm-development/#:~:text=The%20arms%20of%20apes%20and,%2C%20hunt%2C%20and%20make%20tools.'>here</a></strong>
+
+            `)">
+            </div>
+
+            <div class="clickable-region leftarm" 
+            onclick="showInfo('Arms', 
+            `The human arm is much shorter than the human leg. 
+            In contrast, the ape's arms are longer than their legs, which helps them navigate arboreal environments.
+            <strong>Learn more about hand evolution <a href='https://explorersweb.com/apes-downclimbing-crucial-for-human-arm-development/#:~:text=The%20arms%20of%20apes%20and,%2C%20hunt%2C%20and%20make%20tools.'>here</a></strong>
+
+            `)">
+            </div>
+
+            <!-- Legs -->
+            <div class="clickable-region legs" 
+            onclick="showInfo('Legs', 
+            `The human leg is longer than an ape’s, allowing for efficient long strides in bipedalism. 
+            Apes have longer arms than legs, which helps them move through trees.
+
+            Humans also have a valgus knee, which provides a bicondylar angle greater than 90 degrees, 
+            improving balance and center of gravity for bipedal movement.
+            <strong>Learn more about hand evolution <a href='https://www.pathwayz.org/Tree/Plain/APES+VS.+HOMININ+SKELETONS#:~:text=Apes%20have%20a%20much%20smaller,sideways%20movement%20of%20the%20knee.&text=Apes%20tend%20to%20be%20flat%20footed%20(have%20plantigrade%20feet).'>here</a></strong>
+
+            `)">
+            </div>
+
+            <!-- Information Box (Initially Hidden) -->
+            <div id="info-box" class="info-box">
+                <h2 id="info-title"></h2>
+                <p id="info-text"></p>
+                <button onclick="closeInfo()">Close</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Charlie Hartley - Interactive Skeleton Project</p>
+    </footer>
+
+    <script src="src/index.js"></script>
+</body>
+</html>
